@@ -15,9 +15,9 @@
       0.1
       0.1
     ];
-    opacityRules = [
-      "90:class_g = 'st-256color'"
-    ];
+    /* opacityRules = [ */
+    /*   "90:name *= 'st'" */
+    /* ]; */
     shadow = true;
     vSync = true;
   };

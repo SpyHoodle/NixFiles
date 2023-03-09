@@ -12,7 +12,6 @@
 
   home.file.".local/bin/statusbar" = {
     source = ./statusbar;
-    recursive = true;
     executable = true;
   };
 

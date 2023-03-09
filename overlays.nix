@@ -43,6 +43,14 @@
       };
       buildInputs = oldAttrs.buildInputs ++ [ final.xorg.libXpm ];
     });
+    tabbed = prev.tabbed.overrideAttrs (oldAttrs: {
+      src = final.fetchFromGitHub {
+        owner = "SpyHoodle";
+        repo = "tabbed";
+        rev = "1001f193fd076cba12bd1ec9f113c144b37d8689";
+        sha256 = "sha256-M5LrFplGfzCdhLTutsPNmox69brvAm2BlXnyza9kGxQ=";
+      };
+    });
     ncmpcpp = prev.ncmpcpp.override {
       visualizerSupport = true;
       clockSupport = true;

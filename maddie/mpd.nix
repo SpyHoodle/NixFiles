@@ -12,6 +12,7 @@
     enable = true;
     settings = {
       ncmpcpp_directory = "~/.local/share/ncmpcpp";
+      lyrics_directory = "~/.local/share/lyrics";
     };
   };
 }

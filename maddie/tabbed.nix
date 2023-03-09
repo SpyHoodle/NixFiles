@@ -2,15 +2,15 @@
 
 {
   home.packages = with pkgs; [
-    dmenu
+    tabbed
   ];
 
-  home.file.".local/bin/dmenu" = {
-    source = ./dmenu;
+  home.file.".local/bin/tabbed" = {
+    source = ./tabbed;
     executable = true;
   };
 
   home.sessionPath = [
-    "$HOME/.local/bin/dmenu"
+    "$HOME/.local/bin/tabbed"
   ];
 }
