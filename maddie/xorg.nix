@@ -32,6 +32,11 @@
     XCOMPOSECACHE = "${config.xdg.cacheHome}/x11/xcompose";
   };
 
+  # Install notify-send
+  home.packages = with pkgs; [
+    libnotify
+  ];
+
   # Configure ~/.xinitrc
   programs.feh.enable = true;
   home.file.".xinitrc".text = ''

@@ -27,6 +27,7 @@
       # System shortcuts
       heif-convert-dir = "for file in *.heic; do heif-convert -q 100 $file \${file/%.heic/.jpg}; done";
       unfuck-wifi = "doas systemctl restart wpa_supplicant.service";
+      cdt = "cd $(mktemp -d)";
       sx = "startx ~/.config/x11/xinitrc";
       sdn = "doas shutdown -h now";
       kys = "kill $(pidof '$@')";
@@ -47,7 +48,7 @@
       LC_ALL = "en_GB.UTF-8";
 
       # Define nixfiles location
-      NIXFILES = "$HOME/Development/Personal/nixfiles";
+      NIXFILES = "$HOME/Development/Personal/NixFiles";
 
       # Java windows
       _JAVA_AWT_WM_NONREPARENTING = 1;

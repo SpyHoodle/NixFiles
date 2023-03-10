@@ -12,8 +12,6 @@
     # Use startx for starting window managers
     displayManager = {
       startx.enable = true;
-      sessionCommands = ''
-      '';
     };
   };
 }

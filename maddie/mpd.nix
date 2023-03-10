@@ -28,8 +28,8 @@
   programs.ncmpcpp = {
     enable = true;
     settings = {
-      ncmpcpp_directory = "~/.local/share/ncmpcpp";
-      lyrics_directory = "~/.local/share/lyrics";
+      ncmpcpp_directory = "${config.home.homeDirectory}/.local/share/ncmpcpp";
+      lyrics_directory = "${config.home.homeDirectory}/.local/share/lyrics";
     };
   };
 }

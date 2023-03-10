@@ -53,7 +53,7 @@
     });
     ncmpcpp = prev.ncmpcpp.override {
       visualizerSupport = true;
-      clockSupport = true;
+      clockSupport = false;
     };
     nerdfonts = prev.nerdfonts.override {
       fonts = [ "Iosevka" "Terminus" ];
