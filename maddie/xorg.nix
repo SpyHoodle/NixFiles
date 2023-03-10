@@ -36,17 +36,20 @@
   programs.feh.enable = true;
   home.file.".xinitrc".text = ''
     # Monitor configuration
-    ${pkgs.xorg.xrandr}/bin/xrandr --output DP-0 --primary --mode 2560x1440 --pos 0x560
     ${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-0 --noprimary --mode 2560x1440 --pos 2560x0 --rotate right
+    ${pkgs.xorg.xrandr}/bin/xrandr --output DP-0 --primary --mode 2560x1440 --pos 0x560
+
+    # Apply wallpaper
+    ${pkgs.feh}/bin/feh --no-fehbg --bg-fill "$HOME/Pictures/Wallpapers/The Walking Dead/shane_1.jpg" --bg-fill "$HOME/Pictures/Wallpapers/The Walking Dead/shane_3.jpg"
+
+    # Refresh xresources
+    ${pkgs.xorg.xrdb}/bin/xrdb "$HOME/.Xresources"
 
     # Speed up repeated keypresses
     ${pkgs.xorg.xset}/bin/xset r rate 300 50
 
     # Set keyboard map and remap caps to escape
     ${pkgs.xorg.setxkbmap}/bin/setxkbmap -layout gb --option caps:escape
-
-    # Apply wallpaper
-    ${pkgs.feh}/bin/feh --no-fehbg --bg-fill "$HOME/Pictures/Wallpapers/The Walking Dead/shane_1.jpg" --bg-fill "$HOME/Pictures/Wallpapers/The Walking Dead/shane_3.jpg"
 
     # Start the window manager
     ${pkgs.openssh}/bin/ssh-agent ${pkgs.dbus}/bin/dbus-run-session ${pkgs.dwm}/bin/dwm
