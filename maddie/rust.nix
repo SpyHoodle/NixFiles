@@ -10,6 +10,6 @@
       CARGO_HOME = "${config.xdg.dataHome}/cargo";
       RUSTUP_HOME = "${config.xdg.dataHome}/rustup";
     };
-    sessionPath = [ "$CARGO_HOME/bin" ];
+    sessionPath = [ "${config.home.sessionVariables.CARGO_HOME}/bin" ];
   };
 }
