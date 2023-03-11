@@ -22,6 +22,7 @@
 
     # Filesystems
     dosfstools
+    btrfs-progs
     ntfs3g
     exfatprogs
     libimobiledevice

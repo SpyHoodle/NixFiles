@@ -41,8 +41,8 @@
   programs.feh.enable = true;
   home.file.".xinitrc".text = ''
     # Monitor configuration
-    ${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-0 --noprimary --mode 2560x1440 --pos 2560x0 --rotate right
     ${pkgs.xorg.xrandr}/bin/xrandr --output DP-0 --primary --mode 2560x1440 --pos 0x560
+    ${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-0 --noprimary --mode 2560x1440 --pos 2560x0 --rotate right
 
     # Apply wallpaper
     ${pkgs.feh}/bin/feh --no-fehbg --bg-fill "$HOME/Pictures/Wallpapers/The Walking Dead/shane_1.jpg" --bg-fill "$HOME/Pictures/Wallpapers/The Walking Dead/shane_3.jpg"

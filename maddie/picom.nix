@@ -15,9 +15,10 @@
       0.1
       0.1
     ];
-    /* opacityRules = [ */
-    /*   "90:name *= 'st'" */
-    /* ]; */
+    opacityRules = [
+      "90:class_g = 'st-256color'"
+      "90:class_g = 'tabbed-trans'"
+    ];
     shadow = true;
     vSync = true;
   };

@@ -1,5 +1,3 @@
-      sessionCommands = ''
-      '';
 { config, pkgs, ... }:
 
 {
