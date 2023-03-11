@@ -10,7 +10,7 @@
   # Enable wireless support & configuration
   networking.wireless.enable = true;
   networking.wireless.networks = {
-    "BT-C5CPMR" = {
+    "BT-C5CPMR_5GEXT" = {
       psk = "hN3LtFrkp36bXc";
     };
   };

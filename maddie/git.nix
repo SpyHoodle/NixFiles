@@ -16,9 +16,9 @@
     lfs.enable = true;
 
     userName = "Madeleine";
-    userEmail = "spyhoodle@icloud.com";
+    userEmail = "maddie@spyhoodle.me";
     signing = {
-      key = "A8B3F646462101EEA4493B3164FAA9959751687D";
+      key = "33CC62D0ED495156FF5FCC550C7CB348221D0AEF";
       signByDefault = true;
       gpgPath = "gpg2";
     };
