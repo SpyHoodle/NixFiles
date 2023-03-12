@@ -20,7 +20,7 @@
     neovide
   ];
 
-  xdg.configFile."nvim" =  {
+  xdg.configFile."nvim" = {
     source = ./neovim;
     recursive = true;
   };

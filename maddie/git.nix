@@ -18,7 +18,7 @@
     userName = "Madeleine";
     userEmail = "maddie@spyhoodle.me";
     signing = {
-      key = "33CC62D0ED495156FF5FCC550C7CB348221D0AEF";
+      key = "467EFD918D5E770AD1EE2CE699CD1AB536E1C7AD";
       signByDefault = true;
       gpgPath = "gpg2";
     };

@@ -6,8 +6,8 @@
     maim # X11 screenshot tool
   ];
 
-  home.file.".local/bin/sst" = {
-    source = ./screenshot/sst.sh;
+  home.file.".local/bin/sss" = {
+    source = ./screenshot/sss.sh;
     executable = true;
   };
 }

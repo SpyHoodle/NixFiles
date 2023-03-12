@@ -5,8 +5,8 @@
       src = final.fetchFromGitHub {
         owner = "SpyHoodle";
         repo = "dwm";
-        rev = "e62a49b77e9490e47200b7778c5086c4dff969a9";
-        sha256 = "sha256-V0tadjoEq/esz708cjfpbBBVqIActYRXKn9yNEeUKLU=";
+        rev = "7dab824afc125afba150949f12f38def1ffd47a8";
+        sha256 = "sha256-qINiKWz8+POCjOL5UA7Mrxw4ZZgJ5D1eGatN1RCeE9M=";
       };
     });
     st = prev.st.overrideAttrs (oldAttrs: {

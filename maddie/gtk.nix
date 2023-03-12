@@ -17,4 +17,8 @@
       name = "Zafiro-icons-Dark";
     };
   };
+
+  home.packages = with pkgs; [
+    gnome.zenity
+  ];
 }
