@@ -5,11 +5,10 @@
     enable = true;
     previewer.source = ./lf/scope;
     settings = {
-      icons = true;
-      hidden = true;
-      number = true;
       relativenumber = true;
+      number = true;
       preview = true;
+      icons = true;
     };
   };
 
