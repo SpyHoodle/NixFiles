@@ -7,6 +7,7 @@
     settings = {
       relativenumber = true;
       number = true;
+      hidden = false;
       preview = true;
       icons = true;
     };
