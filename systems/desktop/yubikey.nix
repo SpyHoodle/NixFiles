@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  services.pcscd.enable = false;
+  services.pcscd.enable = true;
   services.udev.packages = [ pkgs.yubikey-personalization pkgs.android-udev-rules ];
   security.pam = {
     services = {
