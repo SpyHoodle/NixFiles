@@ -1,5 +1,5 @@
 {
-  description = "Maddie's NixOS configuration";
+  description = "Maddie's Nix configurations";
 
   inputs = {
     # Home manager
@@ -13,39 +13,55 @@
   outputs = { self, nixpkgs, home-manager, darwin }:
     let
       username = "maddie";
-      pkgs = import nixpkgs { system = "aarch64-darwin"; config.allowUnfree = true; config.allowUnsupportedSystem = false; config.allowBroken = false; overlays = import ./overlays.nix; };
-      utils = import ./utils pkgs;
-      specialArgs = { inherit username; inherit pkgs; };
+      utils = import ./utils nixpkgs;
+
+      nixpkgs_x86_64 = import nixpkgs {
+        config.allowUnfree = true;
+        config.allowUnsupportedSystem = false;
+        config.allowBroken = false;
+        overlays = import ./overlays.nix;
+        system = "x86_64-linux";
+      };
+
+      nixpkgs_aarch64 = import nixpkgs {
+        config.allowUnfree = true;
+        config.allowUnsupportedSystem = false;
+        config.allowBroken = false;
+        overlays = import ./overlays.nix;
+        system = "aarch64-darwin";
+      };
     in
     {
       nixosConfigurations."luna" = nixpkgs.lib.nixosSystem {
-        inherit specialArgs;
-        inherit pkgs;
+        specialArgs = { inherit username; };
+        pkgs = nixpkgs_x86_64;
         system = "x86_64-linux";
         modules = [
           home-manager.nixosModules.home-manager
           {
             home-manager.users.${username}.imports = utils.nixFilesIn ./maddie/common ++ utils.nixFilesIn ./maddie/nixos;
-            home-manager.extraSpecialArgs = specialArgs;
+            home-manager.extraSpecialArgs = { inherit username; pkgs = nixpkgs_x86_64; };
           }
-        ] ++ utils.nixFilesIn ./systems/desktop;
+        ] ++ utils.nixFilesIn ./systems/mdesktop;
       };
 
-      darwinConfigurations."MMacBookPro" = darwin.lib.darwinSystem {
-        inherit specialArgs;
-        inherit pkgs;
+      darwinConfigurations."MMacBookPro" = darwin.lib.darwinSystem
+      {
+        pkgs = nixpkgs_aarch64;
+        specialArgs = { inherit username; };
         system = "aarch64-darwin";
         modules = [
           home-manager.darwinModules.home-manager
           {
             home-manager.useUserPackages = true;
             home-manager.users.${username}.imports = utils.nixFilesIn ./maddie/common ++ utils.nixFilesIn ./maddie/macos;
-            home-manager.extraSpecialArgs = specialArgs;
+            home-manager.extraSpecialArgs = { inherit username; pkgs = nixpkgs_aarch64; };
           }
-        ] ++ utils.nixFilesIn ./systems/macbookpro;
+        ] ++ utils.nixFilesIn ./systems/mmacbookpro;
       };
 
-      formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
-      formatter.aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.nixpkgs-fmt;
+      formatter.x86_64-linux = nixpkgs_x86_64.legacyPackages.x86_64-linux.nixpkgs-fmt;
+      formatter.aarch64-darwin = nixpkgs_aarch64.legacyPackages.aarch64-darwin.nixpkgs-fmt;
     };
 }
+

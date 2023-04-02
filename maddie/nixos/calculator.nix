@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    amfora
-    lynx
+    nodePackages.insect
   ];
 }
