@@ -16,9 +16,6 @@
     # Processes
     killall
     appimage-run
-    ani-cli
-    yt-dlp
-    mediainfo
 
     # Filesystems
     dosfstools

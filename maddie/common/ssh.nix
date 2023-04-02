@@ -1,11 +1,6 @@
 { config, pkgs, username, ... }:
 
 {
-  # Drawterm
-  home.packages = with pkgs; [
-    drawterm
-  ];
-
   # SSH
   programs.ssh = {
     enable = true;

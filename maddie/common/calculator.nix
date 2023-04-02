@@ -2,6 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    nodePackages.insect
+    # nodePackages.insect
   ];
 }

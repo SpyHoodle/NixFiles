@@ -56,7 +56,7 @@
       clockSupport = false;
     };
     nerdfonts = prev.nerdfonts.override {
-      fonts = [ "Iosevka" "Terminus" ];
+      fonts = [ "Iosevka" "Terminus" "JetBrainsMono" ];
     };
   })
 ]

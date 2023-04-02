@@ -5,8 +5,6 @@
     # Aliases
     shellAliases = {
       # Core Programs
-      ls = "ls -lhN --color=auto --group-directories-first";
-      ll = "ls -av";
       cp = "cp -iv";
       mv = "mv -iv";
       rm = "rm -vI";

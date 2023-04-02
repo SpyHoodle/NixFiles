@@ -37,5 +37,14 @@
       init.defaultBranch = "development";
       pull.rebase = "merges";
     };
+
+    ignores = [
+      "**/.DS_Store"
+      "**/._.DS_Store"
+      ".DS_Store"
+      "._.DS_Store"
+      "**/*.swp"
+      "*.swp"
+    ];
   };
 }

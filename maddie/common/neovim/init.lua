@@ -52,9 +52,7 @@ return require('packer').startup(function(use)
   use {
     'xiyaowong/nvim-transparent',
     config = function()
-      require('transparent').setup({
-        enable = false;
-      })
+      vim.g.transparent_enabled = false
     end
   }
 
