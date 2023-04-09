@@ -38,8 +38,8 @@
       src = final.fetchFromGitHub {
         owner = "SpyHoodle";
         repo = "slock";
-        rev = "e71c4ac0106a438abb5acf4ae89b8518a9bf3682";
-        sha256 = "sha256-7ZeARKljyQSHPoFb+6p50uIr2q5VOqE/XSELqurNMBw=";
+        rev = "8c5d321b641961237f747d3e68f52b163d673634";
+        sha256 = "sha256-y+6VU3jXbUOyhUcyPC7CDGjyWLSJcCkhYiHscVib7j4=";
       };
       buildInputs = oldAttrs.buildInputs ++ [ final.xorg.libXpm ];
     });
@@ -56,7 +56,7 @@
       clockSupport = false;
     };
     nerdfonts = prev.nerdfonts.override {
-      fonts = [ "Iosevka" "Terminus" "JetBrainsMono" ];
+      fonts = [ "Iosevka" "JetBrainsMono" "Terminus"  ];
     };
   })
 ]

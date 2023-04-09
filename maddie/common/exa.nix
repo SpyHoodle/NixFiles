@@ -9,6 +9,7 @@
       "--time-style=long-iso"
       "--git"
       "-h"
+      "-g"
     ];
     icons = true;
   };

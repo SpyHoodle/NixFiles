@@ -21,8 +21,8 @@
   home.pointerCursor = {
     gtk.enable = true;
     x11.enable = true;
-    package = pkgs.phinger-cursors;
-    name = "phinger-cursors";
+    package = pkgs.apple-cursor;
+    name = "macOS-BigSur";
     size = 24;
   };
 
@@ -57,7 +57,7 @@
     ${pkgs.xorg.setxkbmap}/bin/setxkbmap -layout gb --option caps:escape
 
     # Start the window manager
-    ${pkgs.openssh}/bin/ssh-agent ${pkgs.dbus}/bin/dbus-run-session ${pkgs.dwm}/bin/dwm
+    ${pkgs.openssh}/bin/ssh-agent ${pkgs.dwm}/bin/dwm
   '';
 
   xresources.properties = {

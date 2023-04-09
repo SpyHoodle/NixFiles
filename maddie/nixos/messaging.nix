@@ -6,5 +6,6 @@
     signal-desktop # Signal client
     discord-canary # Discord client
     ripcord # Better discord client
+    nheko # Better matrix client
   ];
 }
