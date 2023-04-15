@@ -36,6 +36,11 @@ let
   };
 in
 {
+  environment.systemPackages = with pkgs; [
+    rnnoise
+    rnnoise-plugin
+  ];
+
   environment.etc."pipewire/pipewire.conf.d/99-input-denoising.conf" = {
     source = json.generate "99-input-denoising.conf" pw_rnnoise_config;
   };

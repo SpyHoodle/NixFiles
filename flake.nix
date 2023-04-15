@@ -32,7 +32,7 @@
       };
     in
     {
-      nixosConfigurations."luna" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."MDesktop" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit username; };
         pkgs = nixpkgs_x86_64;
         system = "x86_64-linux";

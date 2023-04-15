@@ -1,29 +1,29 @@
 #!/bin/sh
 
-#  ____                _
-# | __ )  ___  ___ ___| | _____ _   _
-# |  _ \ / _ \/ __/ __| |/ / _ \ | | |
-# | |_) | (_) \__ \__ \   <  __/ |_| |
-# |____/ \___/|___/___/_|\_\___|\__, |
-#                               |___/ v1.2
-# GitHub: https://github.com/SpyHoodle/bosskey
-
-
-function refresh_statusbar() {
-  case $1 in
-    dwmblocks)
-      # Refresh dwmblocks as it only updates when told so
-      kill -35 $(pidof dwmblocks)
-      ;;
-  esac
-}
-
-
-while getopts "lmpur" options; do
+while getopts "lrpm:u:" options; do
   case $options in
     m)
-      # Mute the volume
-      pamixer --mute
+      devices=$OPTARG
+      if echo "$devices" | grep "mic" &>/dev/null; then
+        # Mute the microphone
+        pamixer --default-source --mute
+      fi
+      if echo "$devices" | grep "vol" &>/dev/null; then
+        # Mute the volume
+        pamixer --mute
+      fi
+      ;;
+
+    u)
+      devices=$OPTARG
+      if echo "$devices"| grep "mic" &>/dev/null; then
+        # Mute the microphone
+        pamixer --default-source --unmute
+      fi
+      if echo "$devices" | grep "vol" &>/dev/null; then
+        # Unmute the volume
+        pamixer --unmute
+      fi
       ;;
 
     p)
@@ -35,16 +35,5 @@ while getopts "lmpur" options; do
       # Lock the screen using slock(1)
       slock
       ;;
-
-    u)
-      # Unmute the audio
-      pamixer --unmute
-      ;;
-
-    r)
-      # Refresh a dwmblocks status bar
-      refresh_statusbar "dwmblocks"
-      ;;
-
   esac
 done
