@@ -6,6 +6,5 @@
     jetbrains.goland
     jetbrains.webstorm
     jetbrains.pycharm-professional
-    android-studio
   ];
 }
