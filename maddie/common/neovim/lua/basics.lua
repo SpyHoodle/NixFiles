@@ -31,6 +31,6 @@ vim.g["netrw_liststyle"] = 3
 vim.g["netrw_winsize"] = 25
 
 -- Neovide
-vim.o.guifont = 'Iosevka:h12'
+vim.o.guifont = 'JetBrainsMono Nerd Font:h12'
 vim.g.neovide_cursor_vfx_mode = 'railgun'
 vim.g.neovide_remember_window_size = true
