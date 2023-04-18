@@ -15,6 +15,7 @@
     p7zip
 
     # Cli tools
+    ripgrep
     wget
     fzf
     bat
