@@ -12,8 +12,9 @@
     ];
     casks = [
       # Media
-      "popcorn-time"
+      /* "popcorn-time" */
       "syncplay"
+      "deluge"
 
       # Games
       /* "minecraft" */
