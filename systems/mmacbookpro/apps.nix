@@ -21,6 +21,7 @@
       /* "prismlauncher" */
 
       # IDEs
+      "neovide"
       "pycharm"
       "webstorm"
       "clion"
