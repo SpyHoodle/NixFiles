@@ -10,6 +10,7 @@
       numberLines = {
         enable = true;
         relative = true;
+
       };
       scrollOff.lines = 3;
       showWhitespace.enable = false;
@@ -21,6 +22,16 @@
         enableMouse = true;
         setTitle = true;
       };
+      hooks = [
+       {
+         name = "WinSetOption";
+         option = "filetype=nix";
+         commands = ''
+           set-option window indentwidth 2
+           set-option window formatcmd nixpkgs-fmt
+         '';
+       }
+     ];
     };
     plugins = with pkgs.kakounePlugins; [
       kakoune-rainbow
@@ -29,7 +40,8 @@
       pkgs.kak-lsp
     ];
     extraConfig = ''
-      eval %sh{kak-lsp --kakoune -s $kak_session}  # Not needed if you load it with plug.kak.
+      hook global InsertChar \t %{ exec -draft h@ }
+      eval %sh{kak-lsp --kakoune -s $kak_session}
       lsp-enable
     '';
   };
