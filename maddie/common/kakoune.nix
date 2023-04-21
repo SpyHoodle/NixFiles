@@ -14,9 +14,12 @@
       scrollOff.lines = 3;
       showWhitespace.enable = false;
       tabStop = 4;
+      colorScheme = "one-dark";
       ui = {
+        statusLine = "top";
         assistant = "cat";
         enableMouse = true;
+        setTitle = true;
       };
     };
     plugins = with pkgs.kakounePlugins; [

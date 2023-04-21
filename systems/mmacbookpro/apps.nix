@@ -30,7 +30,7 @@
       "minecraft"
       "prismlauncher"
 
-      # IDEs
+      # Development
       "neovide"
       "pycharm"
       "webstorm"
@@ -38,6 +38,7 @@
       "goland"
       "appcode"
       "android-studio"
+      "tower"
 
       # Learning
       "anki"
@@ -46,6 +47,11 @@
       "boop"
       "haptickey"
       "kdeconnect"
+      "hazeover"
     ];
+    masApps = {
+      "Codye" = 1516894961;
+      "Xcode" = 497799835;
+    };
   };
 }
