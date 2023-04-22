@@ -30,6 +30,9 @@
       "minecraft"
       "prismlauncher"
 
+      # Design
+      "sketch"
+
       # Development
       "neovide"
       "pycharm"
@@ -39,6 +42,7 @@
       "appcode"
       "android-studio"
       "tower"
+      "secretive"
 
       # Learning
       "anki"

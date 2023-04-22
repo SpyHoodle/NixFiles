@@ -35,6 +35,7 @@
     extraConfig = {
       init.defaultBranch = "development";
       pull.rebase = "merges";
+      core.sshCommand = "/run/current-system/sw/bin/ssh";
     };
 
     ignores = [
