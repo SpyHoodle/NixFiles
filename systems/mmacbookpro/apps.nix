@@ -3,6 +3,10 @@
 {
   homebrew = {
     enable = true;
+    onActivation = {
+      autoUpdate = true;
+      cleanup = "zap";
+    };
     taps = [
       {
         name = "popcorn-official/popcorn-desktop";
