@@ -52,6 +52,7 @@
       "haptickey"
       "kdeconnect"
       "hazeover"
+      "yubico-authenticator"
     ];
     masApps = {
       "Codye" = 1516894961;
