@@ -56,6 +56,7 @@
       "haptickey"
       "kdeconnect"
       "hazeover"
+      "touchswitcher"
       "yubico-authenticator"
     ];
     masApps = {
