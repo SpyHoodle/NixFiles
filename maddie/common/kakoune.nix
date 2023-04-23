@@ -71,5 +71,9 @@
 
       set-option global modelinefmt '%opt{lsp_modeline_progress} {StatusLine}{string}%opt{modeline_git_branch}{type}%sh{ [ -n "$kak_opt_filetype" ] && echo "$kak_opt_filetype " }{default}%val{bufname}{{context_info}}{default} {{mode_info}} {meta}%val{cursor_line}:%val{cursor_char_column}'
     '';
-  };
+
+    xdg.configFile."kak/colors" = {
+      source = ./kakoune/colors;
+      recursive = true;
+    };
 }
