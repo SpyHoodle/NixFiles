@@ -9,6 +9,7 @@
     configDir = "/home/${username}/.config/syncthing";
     guiAddress = "0.0.0.0:8384";
     overrideFolders = true;
+    overrideDevices = true;
     devices = {
       "M.Phone.Pixel" = { id = "WMGWVOU-DFZQSZO-46XQJQA-Q5XD5ZB-NDXK5SP-LXNAADH-Z2KJN4P-4P4UXA5"; };
       "Lambda" = { id = "ZYNSFWR-F3ZNDDT-66TSJWB-PRP3KQK-IWTTABU-GGWT5DL-RWC7VAE-LI5AXQQ"; };
