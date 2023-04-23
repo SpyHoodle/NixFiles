@@ -12,6 +12,7 @@
     overrideDevices = true;
     devices = {
       "M.Phone.Pixel" = { id = "WMGWVOU-DFZQSZO-46XQJQA-Q5XD5ZB-NDXK5SP-LXNAADH-Z2KJN4P-4P4UXA5"; };
+      "M.MacBookPro" = { id = "A5HRCSI-RWYZ6GG-SCBZ2OJ-PG6T7VP-WKDN2VP-CNXIQ3B-VCJ7ZHO-MTV63QP"; };
       "Lambda" = { id = "ZYNSFWR-F3ZNDDT-66TSJWB-PRP3KQK-IWTTABU-GGWT5DL-RWC7VAE-LI5AXQQ"; };
     };
     folders = {

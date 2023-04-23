@@ -53,6 +53,7 @@
 
       # Tools
       "boop"
+      "syncthing"
       "haptickey"
       "kdeconnect"
       "hazeover"
