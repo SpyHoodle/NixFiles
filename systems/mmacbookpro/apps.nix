@@ -33,6 +33,7 @@
       # Games
       "minecraft"
       "prismlauncher"
+      "tetrio"
 
       # Design
       "sketch"
