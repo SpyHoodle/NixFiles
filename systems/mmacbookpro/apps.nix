@@ -34,11 +34,13 @@
       "minecraft"
       "prismlauncher"
       "tetrio"
+      "osu"
 
       # Design
       "sketch"
 
       # Development
+      "lapce"
       "neovide"
       "pycharm"
       "webstorm"
@@ -46,6 +48,7 @@
       "goland"
       "appcode"
       "android-studio"
+      "fleet"
       "tower"
       "secretive"
 
