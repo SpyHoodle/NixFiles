@@ -18,24 +18,24 @@
     folders = {
       "Documents" = {
         path = "/home/${username}/Documents";
-        devices = [ "M.Phone.Pixel" ];
+        devices = [ "M.Phone.Pixel" "M.MacBookPro" ];
       };
       "Pictures" = {
         path = "/home/${username}/Pictures";
-        devices = [ "M.Phone.Pixel" ];
+        devices = [ "M.Phone.Pixel" "M.MacBookPro" ];
       };
       "Videos" = {
         path = "/home/${username}/Videos";
-        devices = [ "M.Phone.Pixel" ];
+        devices = [ "M.Phone.Pixel" "M.MacBookPro" ];
       };
       "Music" = {
         path = "/home/${username}/Music";
-        devices = [ "M.Phone.Pixel" ];
+        devices = [ "M.Phone.Pixel" "M.MacBookPro" ];
       };
       "Android Camera" = {
         id = "pixel_7_pro_2qyx-photos";
         path = "/home/${username}/Pictures/DCIM";
-        devices = [ "M.Phone.Pixel" ];
+        devices = [ "M.Phone.Pixel" "M.MacBookPro" ];
       };
     };
   };
