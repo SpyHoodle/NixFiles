@@ -7,7 +7,7 @@
     nodePackages.bash-language-server
     nodePackages.vim-language-server
     nodePackages.pyright
-    rust-analyzer
+    /* rust-analyzer */
     rnix-lsp
     universal-ctags
   ];

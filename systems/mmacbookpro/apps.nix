@@ -40,13 +40,14 @@
       "sketch"
 
       # Development
-      "lapce"
+      "zed"
       "neovide"
       "pycharm"
       "webstorm"
       "clion"
       "goland"
       "appcode"
+      "datagrip"
       "android-studio"
       "fleet"
       "tower"
