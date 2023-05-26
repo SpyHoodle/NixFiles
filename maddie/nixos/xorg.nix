@@ -5,6 +5,7 @@
   programs.zsh.profileExtra = ''
     # If on /dev/tty1 then run startx automatically
     if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
+      sleep 2
       exec ${pkgs.xorg.xinit}/bin/startx
     fi
   '';

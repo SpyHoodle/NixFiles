@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   qt = {
@@ -7,5 +7,9 @@
       package = pkgs.adwaita-qt;
       name = "adwaita-dark";
     };
+  };
+
+  home.sessionVariables = {
+    QT_STYLE_OVERRIDE = "adwaita-dark";
   };
 }
