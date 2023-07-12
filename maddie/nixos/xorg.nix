@@ -46,7 +46,7 @@
     ${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-0 --noprimary --mode 2560x1440 --pos 2560x0 --rotate right
 
     # Apply wallpaper
-    ${pkgs.feh}/bin/feh --no-fehbg --bg-fill "$HOME/Pictures/Wallpapers/The Walking Dead/shane_1.jpg" --bg-fill "$HOME/Pictures/Wallpapers/The Walking Dead/shane_3.jpg"
+    ${pkgs.feh}/bin/feh --no-fehbg --bg-fill "$HOME/Pictures/Wallpapers/NixOS/nix-wallpaper-waterfall.png"
 
     # Refresh xresources
     ${pkgs.xorg.xrdb}/bin/xrdb "$HOME/.Xresources"

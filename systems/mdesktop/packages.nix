@@ -43,5 +43,8 @@
 
     # Git
     git
+
+    # Compiler
+    gcc
   ];
 }

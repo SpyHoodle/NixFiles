@@ -3,12 +3,12 @@
 {
   programs.helix = {
     enable = true;
-    languages = [
+    /* languages = [
       {
         name = "rust";
         auto-format = true;
       }
-    ];
+    ]; */
     settings = {
       theme = "onedark";
       keys.normal = {

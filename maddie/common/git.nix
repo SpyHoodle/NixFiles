@@ -19,7 +19,7 @@
     signing = {
       key = "FA50688B9EB6D8AA070C8241C296DE8C9053683F";
       signByDefault = true;
-      gpgPath = "gpg2";
+      gpgPath = "/run/current-system/sw/bin/gpg";
     };
 
     aliases = {

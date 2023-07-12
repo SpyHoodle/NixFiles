@@ -28,7 +28,7 @@
 
       # Messaging
       "signal"
-      "nheko"
+      "element"
 
       # Games
       "minecraft"
@@ -52,6 +52,7 @@
       "fleet"
       "tower"
       "secretive"
+      "visual-studio-code"
 
       # Learning
       "anki"
