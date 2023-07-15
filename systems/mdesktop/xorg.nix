@@ -9,9 +9,12 @@
     layout = "gb";
     xkbOptions = "eurosign:e";
 
-    # Use startx for starting window managers
     displayManager = {
+      # Use startx for starting window managers
       startx.enable = true;
+
+      # Use KDE Plasma 5
+      # plasma5.enable = true;
     };
   };
 }

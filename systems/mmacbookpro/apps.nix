@@ -53,6 +53,7 @@
       "tower"
       "secretive"
       "visual-studio-code"
+      "sf-symbols"
 
       # Learning
       "anki"
@@ -67,7 +68,7 @@
     ];
     masApps = {
       "Codye" = 1516894961;
-      "Xcode" = 497799835;
+      /* "Xcode" = 497799835; */
     };
   };
 }

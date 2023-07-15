@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    python310Packages.python-lsp-server
-  ];
   programs.kakoune = {
     enable = true;
     config = {

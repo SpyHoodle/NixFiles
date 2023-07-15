@@ -5,6 +5,7 @@
     jetbrains.clion
     jetbrains.goland
     jetbrains.webstorm
+    jetbrains.datagrip
     jetbrains.pycharm-professional
   ];
 }
