@@ -6,6 +6,8 @@ let
     pillow
     psycopg
     passlib
+    pyotp
+    aiosmtplib
     argon2_cffi
     python-dotenv
     python-lsp-server

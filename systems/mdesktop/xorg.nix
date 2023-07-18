@@ -13,8 +13,13 @@
       # Use startx for starting window managers
       startx.enable = true;
 
-      # Use KDE Plasma 5
-      # plasma5.enable = true;
+      # Use sddm for starting KDE
+      # sddm.enable = true;
     };
+
+    # Enable KDE Plasma 5
+    /* desktopManager = {
+      plasma5.enable = true;
+    }; */
   };
 }
