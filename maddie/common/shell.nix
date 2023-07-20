@@ -25,6 +25,7 @@
       # System shortcuts
       heif-convert-dir = "for file in *.heic; do heif-convert -q 100 $file \${file/%.heic/.jpg}; done";
       unfuck-wifi = "doas systemctl restart wpa_supplicant.service";
+      search = "f=$(fzf) && cd \"$f\" 2>/dev/null || xdg-open \"$f\" >/dev/null 2>&1";
       cdt = "cd $(mktemp -d)";
       sx = "startx ~/.config/x11/xinitrc";
       sdn = "doas shutdown -h now";

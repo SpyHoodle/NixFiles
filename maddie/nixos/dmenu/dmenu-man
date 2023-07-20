@@ -1,0 +1,2 @@
+#!/bin/sh
+man -t $(man -k . | dmenu -l 30 | awk '{print $1}') | ps2pdf - - | zathura -

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+st -e 'zsh' -c 'cd ~/Documents/Code/"$(exa -lh --icons ~/Documents/Code | tail -n +2 | dmenu -l 30 | sed "s|.* ||")"; zsh'

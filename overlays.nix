@@ -6,8 +6,8 @@
         domain = "git.spyhoodle.me";
         owner = "maddie";
         repo = "dwm";
-        rev = "dca69fedae1e29d946ece4c8325907732015f83f";
-        sha256 = "sha256-OezFDY2Gxu+qqT3hdGb+g+YyqV+8R8gSN3ux5+QvL4o=";
+        rev = "a06076bfb9324af6c4122d9cc5b0904778013350";
+        sha256 = "sha256-KGqbff/i9fG0B/gMrdnwevRElL6r8lbYCloWp/NPx+0=";
       };
     });
     st = prev.st.overrideAttrs (oldAttrs: {
@@ -25,8 +25,8 @@
         domain = "git.spyhoodle.me";
         owner = "maddie";
         repo = "dmenu";
-        rev = "82156146b3f3ab720ac752a953b952d638e1f935";
-        sha256 = "sha256-L6aqP7wmegl6Jv4ytMw/j1FwH5lXv8QjWOY5mHotkxI=";
+        rev = "1b12798a3762807697227e9e40be29408df59ee9";
+        sha256 = "sha256-wnVNqNCUpJTqHXfst9DiBaq/gzVwhlq07VM9CixczRc=";
       };
     });
     slstatus = prev.slstatus.overrideAttrs (oldAttrs: {
