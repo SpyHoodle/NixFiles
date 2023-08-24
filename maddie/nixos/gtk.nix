@@ -9,16 +9,17 @@
       size = 10;
     };
     theme = {
-      package = pkgs.gruvbox-dark-gtk;
-      name = "gruvbox-dark";
+      package = pkgs.lounge-gtk-theme;
+      name = "Lounge-night-compact";
     };
     iconTheme = {
-      package = pkgs.zafiro-icons;
-      name = "Zafiro-icons-Dark";
+      package = pkgs.whitesur-icon-theme;
+      name = "WhiteSur-dark";
     };
   };
 
   home.packages = with pkgs; [
     gnome.zenity
+    libsForQt5.breeze-gtk
   ];
 }

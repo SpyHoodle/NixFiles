@@ -34,8 +34,8 @@
         domain = "git.spyhoodle.me";
         owner = "maddie";
         repo = "slstatus";
-        rev = "b22f3d8ec8e2d67bbd32f02721d9d8157a46edd4";
-        sha256 = "sha256-OhssKVQArcQAgCavkFaCRvxUM3689t1v3YCv9IW7osU=";
+        rev = "2546de2a4c5ab34d96fb31f75d3a8b7d6840005e";
+        sha256 = "sha256-aoEd4GGA+jkoxvJlRlXqMiaxM8mZe4Jt5CtKKtnu+rQ=";
       };
     });
     slock = prev.slock.overrideAttrs (oldAttrs: {
