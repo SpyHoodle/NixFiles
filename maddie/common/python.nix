@@ -2,6 +2,8 @@
 
 let
   packages = ps: with ps; [
+    numpy
+    matplotlib
     tkinter
     pillow
     psycopg

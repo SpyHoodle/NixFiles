@@ -57,6 +57,7 @@
 
       # Learning
       "anki"
+      "obsidian"
 
       # Tools
       "boop"
