@@ -7,10 +7,19 @@
     ];
 
   # Setup bootloader
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot = {
+    enable = true;
+    consoleMode = "max";
+  };
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   boot.initrd.systemd.enable = true;
+
+  # Plymouth
+  boot.plymouth = {
+    enable = true;
+    #logo = ./plymouth/logo.png;
+  };
 
   # Setup crypto keyfile
   boot.initrd.secrets = {
