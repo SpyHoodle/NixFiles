@@ -43,9 +43,9 @@
     "*.font" = "Iosevka:pixelsize=12:antialias=true:autohint=true";
   };
 
-  # Configure ~/.xinitrc
+  # Configure ~/.xprofile
   programs.feh.enable = true;
-  home.file.".xinitrc".text = ''
+  home.file.".xprofile".text = ''
     # Monitor configuration
     ${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-0 --noprimary --mode 2560x1440 --pos 2560x0 --rotate right
     ${pkgs.xorg.xrandr}/bin/xrandr --output DP-0 --primary --mode 2560x1440 --pos 0x560

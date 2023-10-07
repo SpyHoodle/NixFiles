@@ -5,7 +5,7 @@
     openrgb-with-all-plugins
   ];
 
-  home.file.".xinitrc".text = ''
+  home.file.".xprofile".text = ''
     # Set RGB perhipherals to white
     ${pkgs.openrgb}/bin/openrgb -c white -m static &
 

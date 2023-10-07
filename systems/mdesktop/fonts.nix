@@ -8,5 +8,6 @@
     source-han-sans
     source-han-serif
     source-han-code-jp
+    terminus_font
   ];
 }

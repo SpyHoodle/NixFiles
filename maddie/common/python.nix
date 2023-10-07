@@ -13,6 +13,7 @@ let
     argon2_cffi
     python-dotenv
     python-lsp-server
+    openrgb-python
   ];
 in
 {

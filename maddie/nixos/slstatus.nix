@@ -5,7 +5,7 @@
     slstatus
   ];
 
-  home.file.".xinitrc".text = ''
+  home.file.".xprofile".text = ''
     # Start slstatus
     ${pkgs.slstatus}/bin/slstatus &
   '';

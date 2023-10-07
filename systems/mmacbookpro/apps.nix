@@ -43,6 +43,7 @@
       "zed"
       "neovide"
       "pycharm"
+      "rustrover"
       "webstorm"
       "clion"
       "goland"

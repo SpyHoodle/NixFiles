@@ -6,7 +6,7 @@
     storePath = "${config.xdg.dataHome}/password-store";
   };
 
-  home.file.".xinitrc".text = ''
+  home.file.".xprofile".text = ''
     # Restart pass-secret-service as it tends to start failed
     systemctl restart --user pass-secret-service.service &
   '';

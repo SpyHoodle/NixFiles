@@ -6,7 +6,7 @@
   hardware.opengl.driSupport32Bit = true;
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
   hardware.nvidia.open = false;
-  hardware.nvidia.modesetting.enable = true;
+  hardware.nvidia.modesetting.enable = false;
   services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.opengl.extraPackages = [

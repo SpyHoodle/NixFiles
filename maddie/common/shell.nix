@@ -27,7 +27,7 @@
       unfuck-wifi = "doas systemctl restart wpa_supplicant.service";
       search = "f=$(fzf) && cd \"$f\" 2>/dev/null || xdg-open \"$f\" >/dev/null 2>&1";
       cdt = "cd $(mktemp -d)";
-      sx = "startx ~/.config/x11/xinitrc";
+      sx = "startx ~/.xprofile";
       sdn = "doas shutdown -h now";
       kys = "kill $(pidof '$@')";
 

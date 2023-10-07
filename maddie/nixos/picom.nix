@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  home.file.".xinitrc".text = ''
+  home.file.".xprofile".text = ''
     # Import xorg environment into systemd for the picom service to work
     systemctl --user import-environment XAUTHORITY DISPLAY &
 

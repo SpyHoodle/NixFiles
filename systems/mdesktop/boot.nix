@@ -15,12 +15,6 @@
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   boot.initrd.systemd.enable = true;
 
-  # Plymouth
-  boot.plymouth = {
-    enable = true;
-    #logo = ./plymouth/logo.png;
-  };
-
   # Setup crypto keyfile
   boot.initrd.secrets = {
     "/crypto_keyfile.bin" = null;
@@ -31,9 +25,11 @@
   boot.initrd.luks.devices."luks-16dda63d-9dce-4ef2-9da6-ee458ba3c44c".device = "/dev/disk/by-uuid/16dda63d-9dce-4ef2-9da6-ee458ba3c44c";
   boot.initrd.luks.devices."luks-c180a121-376a-432e-a661-f4be3cc23dfa".keyFile = "/crypto_keyfile.bin";
 
+  # Kernel settings
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
+  boot.kernelParams = [ "video=2560x1440@180" ];
   boot.extraModulePackages = [ ];
 
   # Use the linux-zen kernel
