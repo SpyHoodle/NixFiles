@@ -9,11 +9,6 @@
     };
     taps = [
       {
-        name = "popcorn-official/popcorn-desktop";
-        clone_target = "https://github.com/popcorn-official/popcorn-desktop.git";
-        force_auto_update = true;
-      }
-      {
         name = "kde-mac/kde";
         clone_target = "https://invent.kde.org/packaging/homebrew-kde.git";
         force_auto_update = true;
@@ -21,9 +16,7 @@
     ];
     casks = [
       # Media
-      /* "popcorn-time" */
       "syncplay"
-      "deluge"
       "mpv"
 
       # Messaging
@@ -40,21 +33,17 @@
       "sketch"
 
       # Development
-      "zed"
-      "neovide"
       "pycharm"
-      "rustrover"
       "webstorm"
       "clion"
       "goland"
-      "appcode"
       "datagrip"
-      "android-studio"
+      "rustrover"
       "fleet"
       "tower"
       "secretive"
-      "visual-studio-code"
       "sf-symbols"
+      "iterm2"
 
       # Learning
       "anki"
@@ -70,7 +59,14 @@
     ];
     masApps = {
       "Codye" = 1516894961;
-      /* "Xcode" = 497799835; */
+      "Wireguard" = 1451685025;
+      "Xcode" = 497799835;
+      "One Thing" = 1604176982;
+      "Today" = 6443714928;
+      "Wipr" = 1320666476;
+      "Vinegar" = 1591303229;
+      "Noir" = 1592917505;
+      /* "Element X" = 1631335820; */
     };
   };
 }

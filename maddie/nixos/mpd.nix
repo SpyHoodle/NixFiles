@@ -21,6 +21,12 @@
     '';
   };
 
+  services.mpdris2 = {
+    enable = true;
+    multimediaKeys = true;
+    notifications = true;
+  };
+
   home.packages = with pkgs; [
     mpc_cli
   ];

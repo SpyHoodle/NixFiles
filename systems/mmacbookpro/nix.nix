@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   # Enable flakes and nix-command
@@ -12,6 +12,9 @@
       automatic = true;
       options = "--delete-older-than 7d";
     };
+    extraOptions = lib.optionalString (pkgs.system == "aarch64-darwin") ''
+      extra-platforms = x86_64-darwin aarch64-darwin
+    '';
   };
   services.nix-daemon.enable = true;
 }

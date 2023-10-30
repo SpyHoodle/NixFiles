@@ -6,11 +6,15 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
+    # Doom Emacs
+    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
+    nix-doom-emacs.inputs.nixpkgs.follows = "nixpkgs";
+
     darwin.url = "github:LnL7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, darwin }:
+  outputs = { self, nixpkgs, home-manager, darwin, nix-doom-emacs }:
     let
       username = "maddie";
       utils = import ./utils nixpkgs;
@@ -51,7 +55,7 @@
         modules = [
           home-manager.nixosModules.home-manager
           {
-            home-manager.users.${username}.imports = utils.nixFilesIn ./maddie/common ++ utils.nixFilesIn ./maddie/nixos;
+            home-manager.users.${username}.imports = utils.nixFilesIn ./maddie/common ++ utils.nixFilesIn ./maddie/nixos ++ [ nix-doom-emacs.hmModule ];
             home-manager.extraSpecialArgs = { inherit username; pkgs = nixpkgs_x86_64; };
           }
         ] ++ utils.nixFilesIn ./systems/mdesktop;
@@ -65,7 +69,7 @@
         modules = [
           home-manager.nixosModules.home-manager
           {
-            home-manager.users.${username}.imports = utils.nixFilesIn ./maddie/common ++ utils.nixFilesIn ./maddie/nixos;
+            home-manager.users.${username}.imports = utils.nixFilesIn ./maddie/common ++ utils.nixFilesIn ./maddie/nixos ++ [ nix-doom-emacs.hmModule ];
             home-manager.extraSpecialArgs = { inherit username; pkgs = nixpkgs_aarch64_linux; };
           }
         ] ++ utils.nixFilesIn ./systems/tau;

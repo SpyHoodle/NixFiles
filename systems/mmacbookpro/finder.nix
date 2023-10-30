@@ -4,9 +4,11 @@
   system.defaults = {
     finder = {
       AppleShowAllExtensions = true;
-      QuitMenuItem = true;
       ShowPathbar = true;
       ShowStatusBar = true;
+      FXDefaultSearchScope = "SCcf";
+      FXPreferredViewStyle = "Nlsv";
+      FXEnableExtensionChangeWarning = false;
     };
     NSGlobalDomain.AppleShowAllExtensions = true;
   };
