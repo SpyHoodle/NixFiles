@@ -70,14 +70,5 @@
 
   # Enable Touch ID for sudo
   security.pam.enableSudoTouchIdAuth = true;
-
-  # Run extra initialization on provisioning.
-  environment.extraInit = ''
-    # Show the ~/Library folder
-    chflags nohidden /Users/maddie/Library
-
-    # Show the /Volumes folder
-    chflags nohidden /Volumes
-  '';
 }
 
