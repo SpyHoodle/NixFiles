@@ -57,20 +57,6 @@
         ] ++ utils.nixFilesIn ./systems/mdesktop;
       };
 
-      nixosConfigurations."tau" = nixpkgs.lib.nixosSystem
-      {
-        specialArgs = { inherit username; };
-        pkgs = nixpkgs_aarch64_linux;
-        system = "aarch64-linux";
-        modules = [
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.users.${username}.imports = utils.nixFilesIn ./maddie/common ++ utils.nixFilesIn ./maddie/nixos;
-            home-manager.extraSpecialArgs = { inherit username; pkgs = nixpkgs_aarch64_linux; };
-          }
-        ] ++ utils.nixFilesIn ./systems/tau;
-      };
-
       darwinConfigurations."MMacBookPro" = darwin.lib.darwinSystem
       {
         pkgs = nixpkgs_aarch64_darwin;
