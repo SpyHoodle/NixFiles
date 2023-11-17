@@ -21,6 +21,7 @@
         config.allowBroken = false;
         config.permittedInsecurePackages = [
           "libgcrypt-1.8.10"
+          "libxls-1.6.2"
         ];
         overlays = import ./overlays.nix;
         system = "x86_64-linux";

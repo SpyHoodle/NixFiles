@@ -9,6 +9,11 @@
   hardware.nvidia.modesetting.enable = false;
   services.xserver.videoDrivers = [ "nvidia" ];
 
+  # Fix tauri applications with nvidia drivers
+  environment.sessionVariables = {
+    "WEBKIT_DISABLE_COMPOSITING_MODE" = "1";
+  };
+
   hardware.opengl.extraPackages = [
     (pkgs.runCommand "nvidia-icd" { } ''
       mkdir -p $out/share/vulkan/icd.d

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, username, ... }:
 
 {
   system.defaults = {
@@ -40,12 +40,12 @@
 
     # Folders
     {
-      path = "/Users/maddie/Documents/";
+      path = "/Users/${username}/Documents/";
       section = "others";
       options = "--sort name --display folder";
     }
     {
-      path = "/Users/maddie/Downloads/";
+      path = "/Users/${username}/Downloads/";
       section = "others";
       options = "--sort dateadded";
     }
