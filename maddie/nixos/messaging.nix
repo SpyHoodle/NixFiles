@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    element-desktop # Matrix client
+    schildichat-desktop # Matrix client, fork of element
     signal-desktop # Signal client
     cinny-desktop # Pretty matrix client
     discord-canary # Discord client
