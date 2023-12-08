@@ -15,6 +15,12 @@
         hostname = "ssh.pinea.dev";
         user = "maddie";
       };
+      clicks = {
+        identityFile = "~/.ssh/clickscodes";
+        hostname = "git.clicks.codes";
+        port = 29418;
+        user = "maddie";
+      };
     };
   };
 }

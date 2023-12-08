@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     gh
+    git-review
   ];
 
   home.file.".local/bin/git-sync" = {
